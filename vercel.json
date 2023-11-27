@@ -4,12 +4,6 @@
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9.13" }
     }],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "Django_Application/wsgi.py"
-        }
-    ],
     "rewrites": [
         {"source": "/(.*)", "destination": "/"}
     ]
